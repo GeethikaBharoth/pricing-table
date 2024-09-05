@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <style>
+
+      body {
+        font-family: "Sono", sans-serif;
+        background: linear-gradient(90deg, #eee9f7 0%, rgba(244,250,253,1) 35%, rgba(207,235,251,1) 100%);
+      }
+      .headcom{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      h2{
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 2rem;
+      }
+      p{
+        flex-basis: 40px;
+        padding: 20px;
+        padding-top: 0;
+        font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+      }
+      .pricing-container{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        height: 100vh;
+        gap: 30px;
+        
+      }
+      .pricing-plan{
+        flex-basis: 350px;
+        background-color: #ffffff;
+        border-radius: 0.8rem;
+        margin-bottom: 50px;
+        box-shadow: 0 4px 8px 0 rgba(96, 94, 94, 0.2), 0 6px 20px 0 rgba(84, 80, 80, 0.19);
+      }
+      .plan-title{
+        color: #ffffff;
+        background-color: #0078d4;
+        border-top-left-radius: 0.8rem;
+        border-top-right-radius: 0.8rem;
+        padding: 10px;
+        height: 50px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        font-family: inherit;
+        font-weight: 600;
+        line-height: 2;
+        
+      }
+      .plan-price{
+        padding: 30px;
+        font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+      }
+      .dollar{
+        color: #0078d4;
+        font-size: 2rem;
+      }
+      .plan-features{
+        list-style: none;
+        font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      h3{
+        padding-left: 30px;
+        font-family: inherit;
+
+      }
+      .plan-button{
+        padding: 10px;
+        margin: 20px;
+        margin-left: 25%;
+        margin-bottom: 50px;
+        width: 50%;
+        background-color: #0078d4;
+        color: #ffffff;
+        border-radius: 5px;
+        border: none;
+      }
+
+      /* Hint: What can you do with a media query and flexbox? */
+      @media (max-width: 1250px) {
+        .pricing-container {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+      }
+      .pricing-plan{
+        width: 60%;
+      }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="headcom">
+      <h2>Find the right Data experience for you</h2>
+      <p>Get started for basic—or take your  experience to the next level.</p>
+
+    </div>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price"><span class="dollar">$9.99 </span>/month</div>
+        <h3>Basic plan includes:</h3>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li>
+          <li>✅ 1 User</li>
+          <li>🚫 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price"><span class="dollar">$19.99 </span>/month</div>
+        <h3>Standars plan includes:</h3>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage</li>
+          <li>✅ 5 Users</li>
+          <li>✅ Phone &amp; Email Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price"><span class="dollar">$49.99 </span>/month</div>
+        <h3>Premium plan includes:</h3>
+        <ul class="plan-features">
+          <li>✅ 100GB Storage</li>
+          <li>✅ 10 Users</li>
+          <li>✅ 24/7 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+    </div>
+  </body>
+</html>
